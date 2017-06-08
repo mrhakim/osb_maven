@@ -6,7 +6,7 @@
     <groupId>com.oracle.servicebus</groupId>
     <artifactId>sbar-project-common</artifactId>
     <version>12.2.1-1-0</version>
-    <relativePath>../osbMavenApp</relativePath>
+    <relativePath></relativePath>
   </parent>
   <groupId>osbMavenApp</groupId>
   <artifactId>osbMavenProject</artifactId>
