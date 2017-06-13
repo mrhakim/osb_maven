@@ -30,7 +30,30 @@
   <properties>
     <oracleHome>${env.ORACLE_HOME}</oracleHome>
   </properties>
+  <server>
+       <id>maven.oracle.com</id>
+       <username>valdvogel@hotmail.com</username>
+       <password>{INoDLC3rUG0Hx0l3RbKAuA7HhcGqiVrTdTTKBjajYrU=}</password>
+       <configuration>
+         <basicAuthScope>
+           <host>ANY</host>
+           <port>ANY</port>
+           <realm>OAM 11g</realm>
+         </basicAuthScope>
+         <httpConfiguration>
+           <all>
+             <params>
+               <property>
+                 <name>http.protocol.allow-circular-redirects</name>
+                 <value>%b,true</value>
+               </property>
+             </params>
+           </all>
+         </httpConfiguration>
+       </configuration>
+     </server>
       <repositories>
+	  
     	<repository>
     		<id>maven.oracle.com</id>
     		<releases>
@@ -49,4 +72,5 @@
     		<url>https://maven.oracle.com</url>
     	</pluginRepository>
     </pluginRepositories>
+	
 </project>
