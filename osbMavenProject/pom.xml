@@ -30,7 +30,28 @@
   <properties>
     <oracleHome>${env.ORACLE_HOME}</oracleHome>
   </properties>
-  <server>
+  
+      <repositories>
+	  
+    	<repository>
+    		<id>maven.oracle.com</id>
+    		<releases>
+    			<enabled>true</enabled>
+    		</releases>
+    		<snapshots>
+    			<enabled>false</enabled>
+    		</snapshots>
+    		<url>https://maven.oracle.com</url>
+    		<layout>default</layout>
+    	</repository>
+    </repositories>
+    <pluginRepositories>
+    	<pluginRepository>
+    		<id>maven.oracle.com</id>
+    		<url>https://maven.oracle.com</url>
+    	</pluginRepository>
+    </pluginRepositories>
+	<server>
        <id>maven.oracle.com</id>
        <username>valdvogel@hotmail.com</username>
        <password>{INoDLC3rUG0Hx0l3RbKAuA7HhcGqiVrTdTTKBjajYrU=}</password>
@@ -52,25 +73,5 @@
          </httpConfiguration>
        </configuration>
      </server>
-      <repositories>
-	  
-    	<repository>
-    		<id>maven.oracle.com</id>
-    		<releases>
-    			<enabled>true</enabled>
-    		</releases>
-    		<snapshots>
-    			<enabled>false</enabled>
-    		</snapshots>
-    		<url>https://maven.oracle.com</url>
-    		<layout>default</layout>
-    	</repository>
-    </repositories>
-    <pluginRepositories>
-    	<pluginRepository>
-    		<id>maven.oracle.com</id>
-    		<url>https://maven.oracle.com</url>
-    	</pluginRepository>
-    </pluginRepositories>
 	
 </project>
