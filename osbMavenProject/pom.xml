@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.oracle.servicebus</groupId>
     <artifactId>sbar-project-common</artifactId>
-    <version>12.2.1-1-0</version>
+    <version>12.2.1-0-0</version>
     <relativePath></relativePath>
   </parent>
   <groupId>osbMavenApp</groupId>
@@ -18,7 +18,7 @@
       <plugin>
         <groupId>com.oracle.servicebus.plugin</groupId>
         <artifactId>oracle-servicebus-plugin</artifactId>
-        <version>12.2.1-1-0</version>
+        <version>12.2.1-0-0</version>
         <configuration>
           <oracleServerUrl>http://localhost:7001</oracleServerUrl>
           <oracleUsername>jenkins</oracleUsername>
@@ -30,4 +30,23 @@
   <properties>
     <oracleHome>${env.ORACLE_HOME}</oracleHome>
   </properties>
+      <repositories>
+    	<repository>
+    		<id>maven.oracle.com</id>
+    		<releases>
+    			<enabled>true</enabled>
+    		</releases>
+    		<snapshots>
+    			<enabled>false</enabled>
+    		</snapshots>
+    		<url>https://maven.oracle.com</url>
+    		<layout>default</layout>
+    	</repository>
+    </repositories>
+    <pluginRepositories>
+    	<pluginRepository>
+    		<id>maven.oracle.com</id>
+    		<url>https://maven.oracle.com</url>
+    	</pluginRepository>
+    </pluginRepositories>
 </project>
